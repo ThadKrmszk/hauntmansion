@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 
 public class playercontroller : MonoBehaviour
 {
-    
+    public GameObject hurtUi;
     public float currentSpeed = 1f ;
     public float runSpeed = 1;
     public float lowSpeed = 1;
@@ -104,11 +104,14 @@ public class playercontroller : MonoBehaviour
         if (HealthBar.currentHealth < 50  )
         { 
             animator.SetBool("is_Damage",true);
-            
+            hurtUi.SetActive(true);
+            SoundManagers.Playsound(SoundManagers.Sound.PlayerHearth);
+
         }
         else
         { 
             animator.SetBool("is_Damage",false);
+            hurtUi.SetActive(false);
         }
         
         

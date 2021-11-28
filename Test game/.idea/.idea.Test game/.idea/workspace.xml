@@ -16,16 +16,16 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/code/objcode/FlashlightPos.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/code/ScencScript/ScenceChange.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/code/playerScript/MapOpen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/code/EnemyScript/SpawnScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/code/objcode/CamPos.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/code/EnemyScript/EnemyAI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/code/EnemyScript/SpawnAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.10/Runtime/Behaviours/CinemachineVirtualCamera.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@10.5.1/Editor/2D/Renderer2DUpgrader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/code/playerScript/playercontroller.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/code/objcode/FlashlightPos.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/code/playerScript/MapOpen.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/code/EnemyScript/SpawnAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/code/Sound/SoundManagers.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -69,8 +69,9 @@
       <option value="$PROJECT_DIR$/Assets/ghostchasesound.cs" />
       <option value="$PROJECT_DIR$/Assets/code/EnemyScript/DestroyOnExit.cs" />
       <option value="$PROJECT_DIR$/Assets/code/EnemyScript/EnemyAI.cs" />
-      <option value="$PROJECT_DIR$/Assets/code/playerScript/playercontroller.cs" />
       <option value="$PROJECT_DIR$/Assets/code/Sound/SoundManagers.cs" />
+      <option value="$PROJECT_DIR$/Assets/Uianim.cs" />
+      <option value="$PROJECT_DIR$/Assets/code/playerScript/playercontroller.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1xuhgeOYE4lCstSTIkizziIIZ09" />
@@ -140,6 +141,7 @@
       <workItem from="1637688394616" duration="4247000" />
       <workItem from="1637773789778" duration="2975000" />
       <workItem from="1637808396870" duration="37947000" />
+      <workItem from="1637930470222" duration="1527000" />
     </task>
     <servers />
   </component>
