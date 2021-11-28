@@ -45,10 +45,14 @@ public class Engame : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerDectected = true;
-            falseExit.SetActive(true);
+            
             if (canExit)
             {
                keyTxt.SetActive(true);  
+            }
+            else
+            {
+                falseExit.SetActive(true);
             }
            
         }

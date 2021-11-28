@@ -4,21 +4,26 @@ using UnityEngine;
 
 public class PrayCount : MonoBehaviour
 {
+    [SerializeField] private GameObject tasksus;
     public static int prayCount;
     // Start is called before the first frame update
     void Start()
     {
-        if (prayCount == 1)
-        {
-            MapOpen.haveAMap = true;
-            Debug.Log("U got map");
-            GameObjective.isFindABuddha = true;
-        }
+      
     }
 
     // Update is called once per frame
     void Update()
     {
         Debug.Log("count"+prayCount);
+        if (prayCount == 1)
+        {
+            TailmanItem.haveATailmanItem = true;
+            BuddaItem.haveABuddaItem = false;
+            GameObjective.isFindABuddha = true;
+            tasksus.SetActive(true);
+            
+            SoundManagers.Playsound(SoundManagers.Sound.Healing);
+        }
     }
 }

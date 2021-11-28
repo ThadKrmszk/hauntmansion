@@ -27,6 +27,10 @@ public class SoundManagers : MonoBehaviour
         DoorOpen,
         Healing,
         
+        //EnMusic
+        EndMusic,
+        EndMusic2,
+        
     }
 
     private static Dictionary<Sound, float> soundTimerDictionary;
@@ -41,6 +45,8 @@ public class SoundManagers : MonoBehaviour
         
         
         soundTimerDictionary[Sound.GhostWalk] = 0f;
+
+        soundTimerDictionary[Sound.Healing] = 0f;
     }
 
    
@@ -136,6 +142,23 @@ public class SoundManagers : MonoBehaviour
                  {
                      float lastTimePlayed = soundTimerDictionary[sound];
                      float ghoststartchaseTimerMax = 0.4f;
+                     if (lastTimePlayed + ghoststartchaseTimerMax < Time.time)
+                     {
+                         soundTimerDictionary[sound] = Time.time;
+                         return true;
+                     }else {
+                         return false;
+                     }
+                 }
+                 else
+                 {
+                     return true;
+                 }
+             case Sound.Healing:
+                 if (soundTimerDictionary.ContainsKey(sound))
+                 {
+                     float lastTimePlayed = soundTimerDictionary[sound];
+                     float ghoststartchaseTimerMax = 5f;
                      if (lastTimePlayed + ghoststartchaseTimerMax < Time.time)
                      {
                          soundTimerDictionary[sound] = Time.time;

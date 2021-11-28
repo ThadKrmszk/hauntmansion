@@ -14,13 +14,16 @@
             <e p="SpawnScript.cs" t="Include" />
           </e>
           <e p="objcode" t="Include">
+            <e p="BuddaItem.cs" t="Include" />
             <e p="CamPos.cs" t="Include" />
             <e p="DoorScript.cs" t="Include" />
             <e p="Engame.cs" t="Include" />
             <e p="FlashlightPos.cs" t="Include" />
             <e p="GameObjective.cs" t="Include" />
             <e p="MedHealing.cs" t="Include" />
+            <e p="Searchbudda.cs" t="Include" />
             <e p="SearchItem.cs" t="Include" />
+            <e p="TailmanItem.cs" t="Include" />
           </e>
           <e p="playerScript" t="Include">
             <e p="gameover.cs" t="Include" />
@@ -41,11 +44,19 @@
             </e>
             <e p="PrayingRoom" t="Include">
               <e p="PrayCount.cs" t="Include" />
+              <e p="PrayDragAndDrop.cs" t="Include" />
+              <e p="PrayPiceseScript.cs" t="Include" />
+            </e>
+            <e p="TaliManRoom" t="Include">
+              <e p="TaliManCount.cs" t="Include" />
+              <e p="TaliManDragAndDrop.cs" t="Include" />
+              <e p="TaliManPiceseScript.cs" t="Include" />
             </e>
           </e>
           <e p="ScencScript" t="Include">
             <e p="ScenceChange.cs" t="Include" />
             <e p="SceneManagersToPray.cs" t="Include" />
+            <e p="SceneManagersToTaliman.cs" t="Include" />
             <e p="SceneManagersUI.cs" t="Include" />
           </e>
           <e p="Sound" t="Include">
@@ -54,6 +65,7 @@
             <e p="SoundManagers.cs" t="Include" />
           </e>
         </e>
+        <e p="LevelLoader.cs" t="Include" />
         <e p="Resources" t="Include">
           <e p="Effects.cs" t="Include" />
         </e>

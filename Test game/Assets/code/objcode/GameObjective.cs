@@ -7,6 +7,10 @@ public class GameObjective : MonoBehaviour
     [SerializeField] GameObject getAMap;
     [SerializeField] GameObject findABuddha;
     [SerializeField] GameObject getATalisman;
+    
+    [SerializeField] GameObject jigSawPuzzle;
+    [SerializeField] GameObject prayPuzzle;
+    [SerializeField] GameObject tailManPuzzle;
 
     public static bool isGetAMap;
 
@@ -36,16 +40,30 @@ public class GameObjective : MonoBehaviour
         {
             isFindABuddha = true;
         }
+
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            isGetATalisman = true;
+        }
         if (isGetAMap)
         {
             getAMap.SetActive(false);
             findABuddha.SetActive(true);
+            jigSawPuzzle.SetActive(false);
+            prayPuzzle.SetActive(true);
         }
 
         if (isFindABuddha)
         {
+            prayPuzzle.SetActive(false);
             findABuddha.SetActive(false);
             getATalisman.SetActive(true);
+            tailManPuzzle.SetActive(true);
+        }
+
+        if (isGetATalisman)
+        {
+          
         }
 
        

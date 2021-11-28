@@ -32,14 +32,18 @@ public class SceneManagersToPray : MonoBehaviour
    
     if (playerDectected)
     {
-      if (Input.GetKeyDown(KeyCode.Space))
+      if (BuddaItem.haveABuddaItem)
       {
-        menuUI.SetActive(false);
-        playerDectected = false;
-        scenceToLoad.Add(SceneManager.LoadSceneAsync("PrayRoomPuzzle",LoadSceneMode.Additive));
-        Debug.Log("GetPuzzle");
-        gameLoaded = true;
+        if (Input.GetKeyDown(KeyCode.Space))
+             {
+               menuUI.SetActive(false);
+               playerDectected = false;
+               scenceToLoad.Add(SceneManager.LoadSceneAsync("PrayRoomPuzzle",LoadSceneMode.Additive));
+               Debug.Log("GetPuzzle");
+               gameLoaded = true;
+             } 
       }
+     
     }
     if (Input.GetKeyDown(KeyCode.Escape))
     {
