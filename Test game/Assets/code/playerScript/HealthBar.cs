@@ -52,7 +52,7 @@ public class HealthBar : MonoBehaviour
 
         while (currentHealth < maxHealth )
         {
-            currentHealth += maxHealth / 100;
+           // currentHealth += maxHealth / 50;
             healthBar.value = currentHealth;
             yield return regenTick;
         }
@@ -66,5 +66,16 @@ public class HealthBar : MonoBehaviour
         {
             HealthBar.instance.Takedamage(10);
         }
+        
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            currentHealth += maxHealth;
+            if (currentHealth > maxHealth)
+            {
+                currentHealth = maxHealth;
+            }
+
+        }
+        healthBar.value = currentHealth;
     }
 }

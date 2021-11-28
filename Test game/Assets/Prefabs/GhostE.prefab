@@ -101,7 +101,7 @@ MonoBehaviour:
   player: {fileID: 0}
   agroRange: 6
   moveSpeed: 5
-  deSpawnTime: 10
+  deSpawnTime: 30
   attackRange: 2.6
   attackDelay: 1.8
 --- !u!50 &8424422558769347440

@@ -27,17 +27,20 @@ public class MapOpen : MonoBehaviour
         if (haveAMap)
         {
              if (Input.GetKeyDown(KeyCode.M))
+                
                    {
+                       SoundManagers.Playsound(SoundManagers.Sound.PlayerOpenMap);
                        isMap = !isMap;
-                       
+
                        if (isMap)
-                        
-                           map.SetActive(true); 
-                        
+
+                           map.SetActive(true);
+
+
                        else
-                        
+                           
                            map.SetActive(false); 
-                        
+                       SoundManagers.Playsound(SoundManagers.Sound.PlayerCloseMap);
                    } 
         }
         //Open map

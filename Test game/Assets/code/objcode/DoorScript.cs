@@ -26,6 +26,7 @@ public class DoorScript : MonoBehaviour
                 PlayerGo.transform.position = posToGo.position;
                 playerDectected = false;
                 Debug.Log("Getinside");
+                SoundManagers.Playsound(SoundManagers.Sound.DoorOpen);
             }
         }
     }

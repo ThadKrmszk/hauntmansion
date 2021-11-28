@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,7 +10,7 @@ using UnityEngine.SceneManagement;
 
 public class playercontroller : MonoBehaviour
 {
-   
+    
     public float currentSpeed = 1f ;
     public float runSpeed = 1;
     public float lowSpeed = 1;
@@ -19,11 +20,17 @@ public class playercontroller : MonoBehaviour
     private WaitForSeconds regenTick = new WaitForSeconds(0.1f);
     private Coroutine regen;
     [SerializeField] private Animator animator;
+    
     private bool isRun;
     private bool isTired;
-    
-    
-    
+    private bool isWalk;
+
+    private void Awake()
+    {
+        SoundManagers.Initialized();
+    }
+
+
     private SpriteRenderer _spriteRenderer;
     
     void Start()
@@ -31,6 +38,7 @@ public class playercontroller : MonoBehaviour
         animator = GetComponent<Animator>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
         currentStamina = maxStamina;
+       
     }
 
      void Update()
@@ -54,8 +62,13 @@ public class playercontroller : MonoBehaviour
         //movecharracter
         float horizontalInput = Input.GetAxis("Horizontal");
         transform.position = transform.position += new Vector3(horizontalInput * Time.deltaTime * currentSpeed,0);
-      
+
+       
        animator.SetFloat("Speed",Mathf.Abs(horizontalInput));
+
+     
+        
+       
        
         if (Input.GetKey(KeyCode.LeftShift))
         {
@@ -80,10 +93,12 @@ public class playercontroller : MonoBehaviour
         if (currentSpeed == runSpeed)
         {
             animator.SetBool("is_Run",true);
+            SoundManagers.Playsound(SoundManagers.Sound.PlayerRun);
         }
         else
         {
             animator.SetBool("is_Run",false);
+            
         }
 
         if (HealthBar.currentHealth < 50  )
@@ -105,17 +120,21 @@ public class playercontroller : MonoBehaviour
             defaultSpeed = 0;
             //SceneManager.LoadScene("GameOver");
             // Debug.Log("GameOver");
+            
         }
         
         if (HealthBar.currentHealth >= 1)
         if (Input.GetKey(KeyCode.D)) 
         {
             _spriteRenderer.flipX = false;
+          
+
         }
         
         else if (Input.GetKey(KeyCode.A)) 
         {
             _spriteRenderer.flipX = true;
+          
         }
     }
     //MakePlayerToUseStamina
@@ -140,11 +159,14 @@ public class playercontroller : MonoBehaviour
                 StopCoroutine(regen);
 
             regen = StartCoroutine(RegenStamina());
+            
         }
         else
         {
+            
             currentSpeed = lowSpeed;
             Debug.Log("I can't Run");
+            SoundManagers.Playsound(SoundManagers.Sound.PlayerExhausted);
         }
     }
 

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class EnemyAI : MonoBehaviour
@@ -15,6 +16,7 @@ public class EnemyAI : MonoBehaviour
     private float lastAttackTime;
     private Animator ghost;
     
+    
   
 
     private Rigidbody2D rb2d;
@@ -27,12 +29,17 @@ public class EnemyAI : MonoBehaviour
         SpawnAI.spawnAllowed = false;
         
         
+        
+          
+       
+
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         //distrance to player
         float distToPlayer = Vector2.Distance(transform.position, player.position);
         if (distToPlayer < agroRange)
@@ -40,6 +47,8 @@ public class EnemyAI : MonoBehaviour
             //code to chase player
             ChasePlayer();
             StopCoroutine(waitForDeSpawn());
+            SoundManagers.Playsound(SoundManagers.Sound.PlayerHearth);
+            SoundManagers.Playsound(SoundManagers.Sound.GhostWalk);
             
             
 
@@ -49,6 +58,7 @@ public class EnemyAI : MonoBehaviour
         {
             StopChasingPlayer();
             StartCoroutine(waitForDeSpawn());
+            
            
         }
 
@@ -59,7 +69,9 @@ public class EnemyAI : MonoBehaviour
                 lastAttackTime = Time.time;
                 HealthBar.instance.Takedamage(10);
                 ghost.Play("Is_Atk");
+                SoundManagers.Playsound(SoundManagers.Sound.GhostHit);
             }
+           
             
         }
 
