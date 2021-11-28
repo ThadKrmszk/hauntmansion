@@ -9,7 +9,6 @@ public class SoundManagers : MonoBehaviour
         //playersound
         PlayerWalk,
         PlayerRun ,
-        PlayerHit,
         PlayerDead,
         PlayerOpenMap,
         PlayerCloseMap,
@@ -20,12 +19,13 @@ public class SoundManagers : MonoBehaviour
         //ghostsound
         GhostWalk,
         GhostHit,
-        GhostDc,
         GhostSound,
         GhostStartChase,
+        BossSound,
         
         //Effect
         DoorOpen,
+        Healing,
         
     }
 

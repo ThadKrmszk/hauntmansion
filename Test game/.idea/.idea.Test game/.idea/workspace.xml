@@ -16,16 +16,20 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/code/objcode/FlashlightPos.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/code/objcode/SearchItem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/code/objcode/GameObjective.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/code/ScencScript/ScenceChange.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/code/playerScript/MapOpen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/code/EnemyScript/SpawnScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/code/objcode/CamPos.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/code/EnemyScript/EnemyAI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/code/EnemyScript/SpawnAI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/code/objcode/MedHealing.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.cinemachine@2.6.10/Runtime/Behaviours/CinemachineVirtualCamera.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/code/PuzzleScript/Jigsaw/count.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@10.5.1/Editor/2D/Renderer2DUpgrader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/code/playerScript/playercontroller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/code/objcode/FlashlightPos.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/code/playerScript/MapOpen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/code/EnemyScript/SpawnAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/code/Sound/SoundManagers.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -43,7 +47,6 @@
       <option value="$PROJECT_DIR$/Assets/code/ScencScript/StartGame.cs" />
       <option value="$PROJECT_DIR$/Assets/code/ScencScript/ContinueButton.cs" />
       <option value="$PROJECT_DIR$/Assets/code/ScencScript/MenuScript.cs" />
-      <option value="$PROJECT_DIR$/Assets/code/PuzzleScript/Jigsaw/PiceseScript.cs" />
       <option value="$PROJECT_DIR$/Assets/code/ScencScript/StartButton.cs" />
       <option value="$PROJECT_DIR$/Assets/code/ScencScript/HideUI.cs" />
       <option value="$PROJECT_DIR$/Assets/code/playerScript/StaminaBar.cs" />
@@ -55,23 +58,33 @@
       <option value="$PROJECT_DIR$/Assets/code/EnemyScript/SpawnAI.cs" />
       <option value="$PROJECT_DIR$/Assets/code/EnemyScript/SpawnScript.cs" />
       <option value="$PROJECT_DIR$/Assets/code/DestroyOnExit.cs" />
-      <option value="$PROJECT_DIR$/Assets/code/playerScript/HealthBar.cs" />
       <option value="$PROJECT_DIR$/Assets/code/Sound/Effects.cs" />
       <option value="$PROJECT_DIR$/Assets/Prefabs/Effects.cs" />
-      <option value="$PROJECT_DIR$/Assets/Resources/Effects.cs" />
       <option value="$PROJECT_DIR$/Assets/audiosetup.cs" />
       <option value="$PROJECT_DIR$/Assets/PlayerSound.cs" />
       <option value="$PROJECT_DIR$/Assets/code/playerScript/gameover.cs" />
-      <option value="$PROJECT_DIR$/Assets/code/playerScript/MapOpen.cs" />
       <option value="$PROJECT_DIR$/Assets/code/objcode/DoorScript.cs" />
       <option value="$PROJECT_DIR$/Assets/code/Sound/BGsound.cs" />
       <option value="$PROJECT_DIR$/Assets/code/ScencScript/ScenceChange.cs" />
       <option value="$PROJECT_DIR$/Assets/ghostchasesound.cs" />
       <option value="$PROJECT_DIR$/Assets/code/EnemyScript/DestroyOnExit.cs" />
       <option value="$PROJECT_DIR$/Assets/code/EnemyScript/EnemyAI.cs" />
-      <option value="$PROJECT_DIR$/Assets/code/Sound/SoundManagers.cs" />
       <option value="$PROJECT_DIR$/Assets/Uianim.cs" />
       <option value="$PROJECT_DIR$/Assets/code/playerScript/playercontroller.cs" />
+      <option value="$PROJECT_DIR$/Assets/code/PuzzleScript/Jigsaw/PiceseScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/code/objcode/Engame.cs" />
+      <option value="$PROJECT_DIR$/Assets/code/playerScript/MapOpen.cs" />
+      <option value="$PROJECT_DIR$/Assets/code/playerScript/HealthBar.cs" />
+      <option value="$PROJECT_DIR$/Assets/code/objcode/SearchItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/code/objcode/GameObjective.cs" />
+      <option value="$PROJECT_DIR$/Assets/code/PuzzleScript/Jigsaw/count.cs" />
+      <option value="$PROJECT_DIR$/Assets/Resources/Effects.cs" />
+      <option value="$PROJECT_DIR$/Assets/code/objcode/MedHealing.cs" />
+      <option value="$PROJECT_DIR$/Assets/code/Sound/SoundManagers.cs" />
+      <option value="$PROJECT_DIR$/Assets/code/PuzzleScript/PrayingRoom/count.cs" />
+      <option value="$PROJECT_DIR$/Assets/code/PuzzleScript/PrayingRoom/DragAndDrop.cs" />
+      <option value="$PROJECT_DIR$/Assets/code/ScencScript/SceneManagersUI1.cs" />
+      <option value="$PROJECT_DIR$/Assets/code/ScencScript/SceneManagersToPray.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1xuhgeOYE4lCstSTIkizziIIZ09" />
@@ -141,7 +154,7 @@
       <workItem from="1637688394616" duration="4247000" />
       <workItem from="1637773789778" duration="2975000" />
       <workItem from="1637808396870" duration="37947000" />
-      <workItem from="1637930470222" duration="1527000" />
+      <workItem from="1637930470222" duration="11282000" />
     </task>
     <servers />
   </component>

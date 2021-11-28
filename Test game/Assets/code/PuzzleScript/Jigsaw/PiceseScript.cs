@@ -25,11 +25,10 @@ public class PiceseScript : MonoBehaviour
                 {
                    transform.position = rightPosition;
                    inRightPosition = true;
-                   GetComponent<SortingGroup>().sortingOrder = 0;  
+                   GetComponent<SortingGroup>().sortingOrder = 0;
+                   count.puzzleCount += 1;
                 }
-              
-            }   
-            
+            }
         }
     }
 }

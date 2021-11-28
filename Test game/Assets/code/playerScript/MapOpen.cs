@@ -6,7 +6,9 @@ using UnityEngine;
 public class MapOpen : MonoBehaviour
 {
     [SerializeField] public GameObject map;
+    [SerializeField] public GameObject iDont;
     private bool isMap;
+    private bool isNoMap;
     public static bool haveAMap;
     // Start is called before the first frame update
     void Start()
@@ -21,8 +23,26 @@ public class MapOpen : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.M))
             {
-                Debug.Log("i dont have a map");
+               /* isNoMap = !isNoMap;
+                if (isNoMap)
+                    iDont.SetActive(true);
+                   Debug.Log("i dont have a map");  
+                
+                else
+                
+                    iDont.SetActive(false);*/
+               isNoMap = !isNoMap;
+
+               if (isNoMap)
+
+                   iDont.SetActive(true);
+
+
+               else
+                           
+                   iDont.SetActive(false); 
             }
+           
         }
         if (haveAMap)
         {

@@ -13,20 +13,9 @@ public class Effects : MonoBehaviour
         }
        
     }
-
-
+    
     public SoundAudioClip[] soundAudioClipsArray;
-    //playersound
-   /* public  AudioClip playerWalk;
-    public  AudioClip playerHit;
-    public  AudioClip playerDead;
-    public  AudioClip playerOpenmap;
-    
-    //ghostsound
-    public AudioClip ghostWalk;
-    public AudioClip ghostHit;
-    public AudioClip ghostDc;*/
-    
+ 
     [System.Serializable]
     public class SoundAudioClip
     {

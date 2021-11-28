@@ -16,7 +16,11 @@
           <e p="objcode" t="Include">
             <e p="CamPos.cs" t="Include" />
             <e p="DoorScript.cs" t="Include" />
+            <e p="Engame.cs" t="Include" />
             <e p="FlashlightPos.cs" t="Include" />
+            <e p="GameObjective.cs" t="Include" />
+            <e p="MedHealing.cs" t="Include" />
+            <e p="SearchItem.cs" t="Include" />
           </e>
           <e p="playerScript" t="Include">
             <e p="gameover.cs" t="Include" />
@@ -27,15 +31,21 @@
               <e p="PlayerSound.cs" t="Include" />
             </e>
             <e p="StaminaBar.cs" t="Include" />
+            <e p="Uianim.cs" t="Include" />
           </e>
           <e p="PuzzleScript" t="Include">
             <e p="Jigsaw" t="Include">
+              <e p="count.cs" t="Include" />
               <e p="DragAndDrop.cs" t="Include" />
               <e p="PiceseScript.cs" t="Include" />
+            </e>
+            <e p="PrayingRoom" t="Include">
+              <e p="PrayCount.cs" t="Include" />
             </e>
           </e>
           <e p="ScencScript" t="Include">
             <e p="ScenceChange.cs" t="Include" />
+            <e p="SceneManagersToPray.cs" t="Include" />
             <e p="SceneManagersUI.cs" t="Include" />
           </e>
           <e p="Sound" t="Include">
@@ -43,7 +53,6 @@
             <e p="ghostchasesound.cs" t="Include" />
             <e p="SoundManagers.cs" t="Include" />
           </e>
-          <e p="Uianim.cs" t="Include" />
         </e>
         <e p="Resources" t="Include">
           <e p="Effects.cs" t="Include" />

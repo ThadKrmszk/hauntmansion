@@ -64,17 +64,7 @@ public class HealthBar : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Y))
         {
-            HealthBar.instance.Takedamage(10);
-        }
-        
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            currentHealth += maxHealth;
-            if (currentHealth > maxHealth)
-            {
-                currentHealth = maxHealth;
-            }
-
+            HealthBar.instance.Takedamage(50);
         }
         healthBar.value = currentHealth;
     }
