@@ -54,10 +54,11 @@
       <option value="$PROJECT_DIR$/Assets/code/ScencScript/ScenceChange.cs" />
       <option value="$PROJECT_DIR$/Assets/code/EnemyScript/SpawnAI.cs" />
       <option value="$PROJECT_DIR$/Assets/code/EnemyScript/SpawnScript.cs" />
-      <option value="$PROJECT_DIR$/Assets/code/EnemyScript/EnemyAI.cs" />
       <option value="$PROJECT_DIR$/Assets/code/playerScript/MapOpen.cs" />
-      <option value="$PROJECT_DIR$/Assets/code/playerScript/HealthBar.cs" />
       <option value="$PROJECT_DIR$/Assets/code/playerScript/playercontroller.cs" />
+      <option value="$PROJECT_DIR$/Assets/code/playerScript/HealthBar.cs" />
+      <option value="$PROJECT_DIR$/Assets/code/EnemyScript/EnemyAI.cs" />
+      <option value="$PROJECT_DIR$/Assets/code/DestroyOnExit.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1xuhgeOYE4lCstSTIkizziIIZ09" />
@@ -125,6 +126,8 @@
       <workItem from="1636181556865" duration="1201000" />
       <workItem from="1637258683055" duration="1552000" />
       <workItem from="1637688394616" duration="4247000" />
+      <workItem from="1637773789778" duration="2975000" />
+      <workItem from="1637808396870" duration="2850000" />
     </task>
     <servers />
   </component>

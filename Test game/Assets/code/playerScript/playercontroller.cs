@@ -80,9 +80,6 @@ public class playercontroller : MonoBehaviour
         if (currentSpeed == runSpeed)
         {
             animator.SetBool("is_Run",true);
-            {
-                animator.SetBool("is_Run",false);
-            }
         }
         else
         {

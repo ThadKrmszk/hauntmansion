@@ -26,6 +26,7 @@ public class EnemyAI : MonoBehaviour
         ghost = GetComponent<Animator>();
         SpawnAI.spawnAllowed = false;
         
+        
 
     }
 
@@ -39,7 +40,7 @@ public class EnemyAI : MonoBehaviour
             //code to chase player
             ChasePlayer();
             StopCoroutine(waitForDeSpawn());
-            deSpawnTime = 30;
+            
             
 
 
@@ -98,9 +99,12 @@ public class EnemyAI : MonoBehaviour
        
         while (true)
         {
-            yield return new WaitForSeconds(deSpawnTime); 
-           Destroy(this.gameObject);
-           SpawnAI.spawnAllowed = true;
+            yield return new WaitForSeconds(deSpawnTime);
+            ghost.Play("ghostdie");
+            
+           // Destroy(this.gameObject ,5f);
+           
+           //SpawnAI.spawnAllowed = true;
            
         }
     }
