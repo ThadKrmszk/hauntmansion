@@ -5,6 +5,7 @@ using UnityEngine;
 public class PrayCount : MonoBehaviour
 {
     [SerializeField] private GameObject tasksus;
+    
     public static int prayCount;
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,7 @@ public class PrayCount : MonoBehaviour
             BuddaItem.haveABuddaItem = false;
             GameObjective.isFindABuddha = true;
             tasksus.SetActive(true);
+            Ghostdespawn.isGhostdespawn = true;
             
             SoundManagers.Playsound(SoundManagers.Sound.Healing);
         }

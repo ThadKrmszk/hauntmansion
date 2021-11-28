@@ -37,6 +37,7 @@
             <e p="Uianim.cs" t="Include" />
           </e>
           <e p="PuzzleScript" t="Include">
+            <e p="Ghostdespawn.cs" t="Include" />
             <e p="Jigsaw" t="Include">
               <e p="count.cs" t="Include" />
               <e p="DragAndDrop.cs" t="Include" />
@@ -60,7 +61,6 @@
             <e p="SceneManagersUI.cs" t="Include" />
           </e>
           <e p="Sound" t="Include">
-            <e p="BGsound.cs" t="Include" />
             <e p="ghostchasesound.cs" t="Include" />
             <e p="SoundManagers.cs" t="Include" />
           </e>

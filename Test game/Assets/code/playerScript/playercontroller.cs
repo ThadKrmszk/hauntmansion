@@ -3,14 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 
 public class playercontroller : MonoBehaviour
 {
     public GameObject hurtUi;
+    public GameObject tiredUi;
     public float currentSpeed = 1f ;
     public float runSpeed = 1;
     public float lowSpeed = 1;
@@ -169,7 +168,8 @@ public class playercontroller : MonoBehaviour
             
             currentSpeed = lowSpeed;
             Debug.Log("I can't Run");
-            SoundManagers.Playsound(SoundManagers.Sound.PlayerExhausted);
+            tiredUi.SetActive(true);
+            
         }
     }
 
@@ -181,6 +181,7 @@ public class playercontroller : MonoBehaviour
         {
             currentStamina += maxStamina / 70;
             yield return regenTick;
+            tiredUi.SetActive(false);
         }
 
         regen = null;

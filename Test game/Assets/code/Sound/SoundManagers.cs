@@ -58,6 +58,7 @@ public class SoundManagers : MonoBehaviour
               AudioSource audioSource = soundGameObject.AddComponent<AudioSource>();
               audioSource.PlayOneShot(GetAudioClip(sound)); 
               audioSource.clip = GetAudioClip(sound);
+              audioSource.volume = 0.3f;
          }
       
      }
@@ -72,7 +73,7 @@ public class SoundManagers : MonoBehaviour
                  if (soundTimerDictionary.ContainsKey(sound))
                  {
                      float lastTimePlayed = soundTimerDictionary[sound];
-                     float playerMoveTimerMax = .50f;
+                     float playerMoveTimerMax = .45f;
                      if (lastTimePlayed + playerMoveTimerMax < Time.time)
                      {
                          soundTimerDictionary[sound] = Time.time;
